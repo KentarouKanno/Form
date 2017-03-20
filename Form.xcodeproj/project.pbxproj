@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		365FBF281E7D1628002BBFF1 /* FormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365FBF271E7D1628002BBFF1 /* FormData.swift */; };
+		365FBF2A1E7D1A1C002BBFF1 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365FBF291E7D1A1C002BBFF1 /* CustomTextView.swift */; };
+		365FBF2C1E7D21E6002BBFF1 /* TextViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365FBF2B1E7D21E6002BBFF1 /* TextViewCellData.swift */; };
+		365FBF321E7D24C2002BBFF1 /* TextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365FBF301E7D24C2002BBFF1 /* TextViewCell.swift */; };
+		365FBF331E7D24C2002BBFF1 /* TextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 365FBF311E7D24C2002BBFF1 /* TextViewCell.xib */; };
+		365FBF351E7D2F64002BBFF1 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365FBF341E7D2F64002BBFF1 /* CellViewModel.swift */; };
+		365FBF391E7D3790002BBFF1 /* BlankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365FBF371E7D3790002BBFF1 /* BlankCell.swift */; };
+		365FBF3A1E7D3790002BBFF1 /* BlankCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 365FBF381E7D3790002BBFF1 /* BlankCell.xib */; };
+		365FBF3C1E7D37ED002BBFF1 /* TextViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365FBF3B1E7D37ED002BBFF1 /* TextViewCellViewModel.swift */; };
+		365FBF3E1E7D3813002BBFF1 /* BlankCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365FBF3D1E7D3813002BBFF1 /* BlankCellViewModel.swift */; };
+		365FBF401E7D3B70002BBFF1 /* BlankCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365FBF3F1E7D3B70002BBFF1 /* BlankCellData.swift */; };
+		36AB4D0D1E7AE44700B8B990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AB4D0C1E7AE44700B8B990 /* AppDelegate.swift */; };
+		36AB4D121E7AE44700B8B990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36AB4D101E7AE44700B8B990 /* Main.storyboard */; };
+		36AB4D141E7AE44700B8B990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36AB4D131E7AE44700B8B990 /* Assets.xcassets */; };
+		36AB4D171E7AE44700B8B990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36AB4D151E7AE44700B8B990 /* LaunchScreen.storyboard */; };
+		36AB4D221E7AE44700B8B990 /* FormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AB4D211E7AE44700B8B990 /* FormTests.swift */; };
+		36F50B5F1E7CA04400E7F26E /* FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B5E1E7CA04400E7F26E /* FormValidation.swift */; };
+		36F50B621E7CA07900E7F26E /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B611E7CA07900E7F26E /* ValidationResult.swift */; };
+		36F50B651E7CA4F900E7F26E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B641E7CA4F900E7F26E /* CustomTextField.swift */; };
+		36F50B671E7CA60000E7F26E /* PickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B661E7CA60000E7F26E /* PickerTextField.swift */; };
+		36F50B691E7CA84A00E7F26E /* TwoCulumnPickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B681E7CA84A00E7F26E /* TwoCulumnPickerTextField.swift */; };
+		36F50B6B1E7CA8AC00E7F26E /* DatePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B6A1E7CA8AC00E7F26E /* DatePickerTextField.swift */; };
+		36F50B6F1E7CAA4F00E7F26E /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B6D1E7CAA4F00E7F26E /* TextFieldCell.swift */; };
+		36F50B701E7CAA4F00E7F26E /* TextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F50B6E1E7CAA4F00E7F26E /* TextFieldCell.xib */; };
+		36F50B761E7CAB2600E7F26E /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B751E7CAB2600E7F26E /* FormViewController.swift */; };
+		36F50B781E7CADEC00E7F26E /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B771E7CADEC00E7F26E /* FormViewModel.swift */; };
+		36F50B7A1E7CB04900E7F26E /* CellValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B791E7CB04900E7F26E /* CellValidation.swift */; };
+		36F50B7C1E7CB39F00E7F26E /* PickerDataArrayType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B7B1E7CB39F00E7F26E /* PickerDataArrayType.swift */; };
+		36F50B7E1E7CB77000E7F26E /* TextFieldCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B7D1E7CB77000E7F26E /* TextFieldCellViewModel.swift */; };
+		36F50B801E7CB93200E7F26E /* PickerTextFieldCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B7F1E7CB93200E7F26E /* PickerTextFieldCellViewModel.swift */; };
+		36F50B821E7CB95100E7F26E /* DatePickerTextFieldCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B811E7CB95100E7F26E /* DatePickerTextFieldCellViewModel.swift */; };
+		36F50B841E7CB98500E7F26E /* TwoColumnPickerTextFieldCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B831E7CB98500E7F26E /* TwoColumnPickerTextFieldCellViewModel.swift */; };
+		36F50B871E7CB9BD00E7F26E /* DataPickerTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B851E7CB9BD00E7F26E /* DataPickerTextFieldCell.swift */; };
+		36F50B881E7CB9BD00E7F26E /* DataPickerTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F50B861E7CB9BD00E7F26E /* DataPickerTextFieldCell.xib */; };
+		36F50B8B1E7CB9D700E7F26E /* PickerTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B891E7CB9D700E7F26E /* PickerTextFieldCell.swift */; };
+		36F50B8C1E7CB9D700E7F26E /* PickerTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F50B8A1E7CB9D700E7F26E /* PickerTextFieldCell.xib */; };
+		36F50B8F1E7CB9FE00E7F26E /* TwoColumnPickerTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B8D1E7CB9FE00E7F26E /* TwoColumnPickerTextFieldCell.swift */; };
+		36F50B901E7CB9FE00E7F26E /* TwoColumnPickerTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F50B8E1E7CB9FE00E7F26E /* TwoColumnPickerTextFieldCell.xib */; };
+		36F50B921E7CBA5E00E7F26E /* TextFieldCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B911E7CBA5E00E7F26E /* TextFieldCellData.swift */; };
+		36F50B941E7CBA8D00E7F26E /* CellDatatype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B931E7CBA8D00E7F26E /* CellDatatype.swift */; };
+		36F50B961E7CBE3F00E7F26E /* PickerTextFieldCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B951E7CBE3F00E7F26E /* PickerTextFieldCellData.swift */; };
+		36F50B981E7CBE6E00E7F26E /* DatePickerTextFieldCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B971E7CBE6E00E7F26E /* DatePickerTextFieldCellData.swift */; };
+		36F50B9A1E7CBE8F00E7F26E /* TwoColumnPickerTextFieldCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B991E7CBE8F00E7F26E /* TwoColumnPickerTextFieldCellData.swift */; };
+		36F50B9D1E7CF75C00E7F26E /* CellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B9C1E7CF75C00E7F26E /* CellViewModelType.swift */; };
+		36F50B9F1E7CF7FC00E7F26E /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F50B9E1E7CF7FC00E7F26E /* UIView+.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36AB4D1E1E7AE44700B8B990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36AB4D011E7AE44600B8B990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36AB4D081E7AE44600B8B990;
+			remoteInfo = Form;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		365FBF271E7D1628002BBFF1 /* FormData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormData.swift; sourceTree = "<group>"; };
+		365FBF291E7D1A1C002BBFF1 /* CustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTextView.swift; path = CustomKeyboard/CustomTextView.swift; sourceTree = "<group>"; };
+		365FBF2B1E7D21E6002BBFF1 /* TextViewCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextViewCellData.swift; path = Model/TextViewCellData.swift; sourceTree = "<group>"; };
+		365FBF301E7D24C2002BBFF1 /* TextViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextViewCell.swift; path = View/Cell/TextViewCell.swift; sourceTree = "<group>"; };
+		365FBF311E7D24C2002BBFF1 /* TextViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextViewCell.xib; path = View/Cell/TextViewCell.xib; sourceTree = "<group>"; };
+		365FBF341E7D2F64002BBFF1 /* CellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellViewModel.swift; path = ViewModel/CellViewModel.swift; sourceTree = "<group>"; };
+		365FBF371E7D3790002BBFF1 /* BlankCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlankCell.swift; path = View/Cell/BlankCell.swift; sourceTree = "<group>"; };
+		365FBF381E7D3790002BBFF1 /* BlankCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BlankCell.xib; path = View/Cell/BlankCell.xib; sourceTree = "<group>"; };
+		365FBF3B1E7D37ED002BBFF1 /* TextViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextViewCellViewModel.swift; path = ViewModel/CellViewModel/TextViewCellViewModel.swift; sourceTree = "<group>"; };
+		365FBF3D1E7D3813002BBFF1 /* BlankCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlankCellViewModel.swift; path = ViewModel/CellViewModel/BlankCellViewModel.swift; sourceTree = "<group>"; };
+		365FBF3F1E7D3B70002BBFF1 /* BlankCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlankCellData.swift; path = Model/BlankCellData.swift; sourceTree = "<group>"; };
+		36AB4D091E7AE44700B8B990 /* Form.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Form.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36AB4D0C1E7AE44700B8B990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		36AB4D111E7AE44700B8B990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		36AB4D131E7AE44700B8B990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36AB4D161E7AE44700B8B990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		36AB4D181E7AE44700B8B990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36AB4D1D1E7AE44700B8B990 /* FormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36AB4D211E7AE44700B8B990 /* FormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTests.swift; sourceTree = "<group>"; };
+		36AB4D231E7AE44700B8B990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36F50B5E1E7CA04400E7F26E /* FormValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormValidation.swift; path = Validation/FormValidation.swift; sourceTree = "<group>"; };
+		36F50B611E7CA07900E7F26E /* ValidationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValidationResult.swift; path = Validation/ValidationResult.swift; sourceTree = "<group>"; };
+		36F50B641E7CA4F900E7F26E /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = CustomKeyboard/CustomTextField.swift; sourceTree = "<group>"; };
+		36F50B661E7CA60000E7F26E /* PickerTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerTextField.swift; path = CustomKeyboard/PickerTextField.swift; sourceTree = "<group>"; };
+		36F50B681E7CA84A00E7F26E /* TwoCulumnPickerTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoCulumnPickerTextField.swift; path = CustomKeyboard/TwoCulumnPickerTextField.swift; sourceTree = "<group>"; };
+		36F50B6A1E7CA8AC00E7F26E /* DatePickerTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatePickerTextField.swift; path = CustomKeyboard/DatePickerTextField.swift; sourceTree = "<group>"; };
+		36F50B6D1E7CAA4F00E7F26E /* TextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFieldCell.swift; path = View/Cell/TextFieldCell.swift; sourceTree = "<group>"; };
+		36F50B6E1E7CAA4F00E7F26E /* TextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextFieldCell.xib; path = View/Cell/TextFieldCell.xib; sourceTree = "<group>"; };
+		36F50B751E7CAB2600E7F26E /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormViewController.swift; path = View/FormViewController.swift; sourceTree = "<group>"; };
+		36F50B771E7CADEC00E7F26E /* FormViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormViewModel.swift; path = ViewModel/FormViewModel.swift; sourceTree = "<group>"; };
+		36F50B791E7CB04900E7F26E /* CellValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellValidation.swift; path = Validation/CellValidation.swift; sourceTree = "<group>"; };
+		36F50B7B1E7CB39F00E7F26E /* PickerDataArrayType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerDataArrayType.swift; path = Model/PickerDataArrayType.swift; sourceTree = "<group>"; };
+		36F50B7D1E7CB77000E7F26E /* TextFieldCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFieldCellViewModel.swift; path = ViewModel/CellViewModel/TextFieldCellViewModel.swift; sourceTree = "<group>"; };
+		36F50B7F1E7CB93200E7F26E /* PickerTextFieldCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerTextFieldCellViewModel.swift; path = ViewModel/CellViewModel/PickerTextFieldCellViewModel.swift; sourceTree = "<group>"; };
+		36F50B811E7CB95100E7F26E /* DatePickerTextFieldCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatePickerTextFieldCellViewModel.swift; path = ViewModel/CellViewModel/DatePickerTextFieldCellViewModel.swift; sourceTree = "<group>"; };
+		36F50B831E7CB98500E7F26E /* TwoColumnPickerTextFieldCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoColumnPickerTextFieldCellViewModel.swift; path = ViewModel/CellViewModel/TwoColumnPickerTextFieldCellViewModel.swift; sourceTree = "<group>"; };
+		36F50B851E7CB9BD00E7F26E /* DataPickerTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataPickerTextFieldCell.swift; path = View/Cell/DataPickerTextFieldCell.swift; sourceTree = "<group>"; };
+		36F50B861E7CB9BD00E7F26E /* DataPickerTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DataPickerTextFieldCell.xib; path = View/Cell/DataPickerTextFieldCell.xib; sourceTree = "<group>"; };
+		36F50B891E7CB9D700E7F26E /* PickerTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerTextFieldCell.swift; path = View/Cell/PickerTextFieldCell.swift; sourceTree = "<group>"; };
+		36F50B8A1E7CB9D700E7F26E /* PickerTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PickerTextFieldCell.xib; path = View/Cell/PickerTextFieldCell.xib; sourceTree = "<group>"; };
+		36F50B8D1E7CB9FE00E7F26E /* TwoColumnPickerTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoColumnPickerTextFieldCell.swift; path = View/Cell/TwoColumnPickerTextFieldCell.swift; sourceTree = "<group>"; };
+		36F50B8E1E7CB9FE00E7F26E /* TwoColumnPickerTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TwoColumnPickerTextFieldCell.xib; path = View/Cell/TwoColumnPickerTextFieldCell.xib; sourceTree = "<group>"; };
+		36F50B911E7CBA5E00E7F26E /* TextFieldCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFieldCellData.swift; path = Model/TextFieldCellData.swift; sourceTree = "<group>"; };
+		36F50B931E7CBA8D00E7F26E /* CellDatatype.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellDatatype.swift; path = Model/CellDatatype.swift; sourceTree = "<group>"; };
+		36F50B951E7CBE3F00E7F26E /* PickerTextFieldCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerTextFieldCellData.swift; path = Model/PickerTextFieldCellData.swift; sourceTree = "<group>"; };
+		36F50B971E7CBE6E00E7F26E /* DatePickerTextFieldCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerTextFieldCellData.swift; sourceTree = "<group>"; };
+		36F50B991E7CBE8F00E7F26E /* TwoColumnPickerTextFieldCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoColumnPickerTextFieldCellData.swift; path = Model/TwoColumnPickerTextFieldCellData.swift; sourceTree = "<group>"; };
+		36F50B9C1E7CF75C00E7F26E /* CellViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellViewModelType.swift; path = ViewModel/CellViewModel/CellViewModelType.swift; sourceTree = "<group>"; };
+		36F50B9E1E7CF7FC00E7F26E /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+.swift"; path = "extension/UIView+.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36AB4D061E7AE44600B8B990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36AB4D1A1E7AE44700B8B990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		365FBF2D1E7D231D002BBFF1 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				365FBF301E7D24C2002BBFF1 /* TextViewCell.swift */,
+				365FBF311E7D24C2002BBFF1 /* TextViewCell.xib */,
+			);
+			name = TextView;
+			sourceTree = "<group>";
+		};
+		365FBF361E7D3773002BBFF1 /* Blank */ = {
+			isa = PBXGroup;
+			children = (
+				365FBF371E7D3790002BBFF1 /* BlankCell.swift */,
+				365FBF381E7D3790002BBFF1 /* BlankCell.xib */,
+			);
+			name = Blank;
+			sourceTree = "<group>";
+		};
+		36AB4D001E7AE44600B8B990 = {
+			isa = PBXGroup;
+			children = (
+				36AB4D0B1E7AE44700B8B990 /* Form */,
+				36AB4D201E7AE44700B8B990 /* FormTests */,
+				36AB4D0A1E7AE44700B8B990 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		36AB4D0A1E7AE44700B8B990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36AB4D091E7AE44700B8B990 /* Form.app */,
+				36AB4D1D1E7AE44700B8B990 /* FormTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36AB4D0B1E7AE44700B8B990 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				365FBF271E7D1628002BBFF1 /* FormData.swift */,
+				36F50B9B1E7CECE800E7F26E /* extension */,
+				36AB4D2C1E7AE47C00B8B990 /* AppDelegate */,
+				36F50B631E7CA47E00E7F26E /* CustomKeyboard */,
+				36F50B5D1E7CA00000E7F26E /* Validation */,
+				36AB4D2F1E7AE49E00B8B990 /* Model */,
+				36AB4D301E7AE4A400B8B990 /* ViewModel */,
+				36AB4D2D1E7AE48700B8B990 /* View */,
+				36AB4D101E7AE44700B8B990 /* Main.storyboard */,
+				36AB4D131E7AE44700B8B990 /* Assets.xcassets */,
+				36AB4D151E7AE44700B8B990 /* LaunchScreen.storyboard */,
+				36AB4D181E7AE44700B8B990 /* Info.plist */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		36AB4D201E7AE44700B8B990 /* FormTests */ = {
+			isa = PBXGroup;
+			children = (
+				36AB4D211E7AE44700B8B990 /* FormTests.swift */,
+				36AB4D231E7AE44700B8B990 /* Info.plist */,
+			);
+			path = FormTests;
+			sourceTree = "<group>";
+		};
+		36AB4D2C1E7AE47C00B8B990 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				36AB4D0C1E7AE44700B8B990 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		36AB4D2D1E7AE48700B8B990 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				36F50B751E7CAB2600E7F26E /* FormViewController.swift */,
+				36AB4D2E1E7AE48D00B8B990 /* Cell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		36AB4D2E1E7AE48D00B8B990 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				36F50B711E7CAA7200E7F26E /* TextField */,
+				36F50B731E7CAA8700E7F26E /* DatePickerTextField */,
+				36F50B721E7CAA7E00E7F26E /* PickerTextField */,
+				36F50B741E7CAA9000E7F26E /* TwoCulumnPickerTextField */,
+				365FBF2D1E7D231D002BBFF1 /* TextView */,
+				365FBF361E7D3773002BBFF1 /* Blank */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		36AB4D2F1E7AE49E00B8B990 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36F50B911E7CBA5E00E7F26E /* TextFieldCellData.swift */,
+				36F50B971E7CBE6E00E7F26E /* DatePickerTextFieldCellData.swift */,
+				36F50B951E7CBE3F00E7F26E /* PickerTextFieldCellData.swift */,
+				36F50B991E7CBE8F00E7F26E /* TwoColumnPickerTextFieldCellData.swift */,
+				365FBF2B1E7D21E6002BBFF1 /* TextViewCellData.swift */,
+				365FBF3F1E7D3B70002BBFF1 /* BlankCellData.swift */,
+				36F50B931E7CBA8D00E7F26E /* CellDatatype.swift */,
+				36F50B7B1E7CB39F00E7F26E /* PickerDataArrayType.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		36AB4D301E7AE4A400B8B990 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				36F50B771E7CADEC00E7F26E /* FormViewModel.swift */,
+				365FBF341E7D2F64002BBFF1 /* CellViewModel.swift */,
+				36F50B6C1E7CA9BF00E7F26E /* CellViewModel */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		36F50B5D1E7CA00000E7F26E /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				36F50B5E1E7CA04400E7F26E /* FormValidation.swift */,
+				36F50B791E7CB04900E7F26E /* CellValidation.swift */,
+				36F50B611E7CA07900E7F26E /* ValidationResult.swift */,
+			);
+			name = Validation;
+			sourceTree = "<group>";
+		};
+		36F50B631E7CA47E00E7F26E /* CustomKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				36F50B641E7CA4F900E7F26E /* CustomTextField.swift */,
+				36F50B6A1E7CA8AC00E7F26E /* DatePickerTextField.swift */,
+				36F50B661E7CA60000E7F26E /* PickerTextField.swift */,
+				36F50B681E7CA84A00E7F26E /* TwoCulumnPickerTextField.swift */,
+				365FBF291E7D1A1C002BBFF1 /* CustomTextView.swift */,
+			);
+			name = CustomKeyboard;
+			sourceTree = "<group>";
+		};
+		36F50B6C1E7CA9BF00E7F26E /* CellViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				36F50B7D1E7CB77000E7F26E /* TextFieldCellViewModel.swift */,
+				36F50B811E7CB95100E7F26E /* DatePickerTextFieldCellViewModel.swift */,
+				36F50B7F1E7CB93200E7F26E /* PickerTextFieldCellViewModel.swift */,
+				36F50B831E7CB98500E7F26E /* TwoColumnPickerTextFieldCellViewModel.swift */,
+				365FBF3B1E7D37ED002BBFF1 /* TextViewCellViewModel.swift */,
+				365FBF3D1E7D3813002BBFF1 /* BlankCellViewModel.swift */,
+				36F50B9C1E7CF75C00E7F26E /* CellViewModelType.swift */,
+			);
+			name = CellViewModel;
+			sourceTree = "<group>";
+		};
+		36F50B711E7CAA7200E7F26E /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				36F50B6D1E7CAA4F00E7F26E /* TextFieldCell.swift */,
+				36F50B6E1E7CAA4F00E7F26E /* TextFieldCell.xib */,
+			);
+			name = TextField;
+			sourceTree = "<group>";
+		};
+		36F50B721E7CAA7E00E7F26E /* PickerTextField */ = {
+			isa = PBXGroup;
+			children = (
+				36F50B891E7CB9D700E7F26E /* PickerTextFieldCell.swift */,
+				36F50B8A1E7CB9D700E7F26E /* PickerTextFieldCell.xib */,
+			);
+			name = PickerTextField;
+			sourceTree = "<group>";
+		};
+		36F50B731E7CAA8700E7F26E /* DatePickerTextField */ = {
+			isa = PBXGroup;
+			children = (
+				36F50B851E7CB9BD00E7F26E /* DataPickerTextFieldCell.swift */,
+				36F50B861E7CB9BD00E7F26E /* DataPickerTextFieldCell.xib */,
+			);
+			name = DatePickerTextField;
+			sourceTree = "<group>";
+		};
+		36F50B741E7CAA9000E7F26E /* TwoCulumnPickerTextField */ = {
+			isa = PBXGroup;
+			children = (
+				36F50B8D1E7CB9FE00E7F26E /* TwoColumnPickerTextFieldCell.swift */,
+				36F50B8E1E7CB9FE00E7F26E /* TwoColumnPickerTextFieldCell.xib */,
+			);
+			name = TwoCulumnPickerTextField;
+			sourceTree = "<group>";
+		};
+		36F50B9B1E7CECE800E7F26E /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				36F50B9E1E7CF7FC00E7F26E /* UIView+.swift */,
+			);
+			name = extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36AB4D081E7AE44600B8B990 /* Form */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36AB4D261E7AE44700B8B990 /* Build configuration list for PBXNativeTarget "Form" */;
+			buildPhases = (
+				36AB4D051E7AE44600B8B990 /* Sources */,
+				36AB4D061E7AE44600B8B990 /* Frameworks */,
+				36AB4D071E7AE44600B8B990 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Form;
+			productName = Form;
+			productReference = 36AB4D091E7AE44700B8B990 /* Form.app */;
+			productType = "com.apple.product-type.application";
+		};
+		36AB4D1C1E7AE44700B8B990 /* FormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36AB4D291E7AE44700B8B990 /* Build configuration list for PBXNativeTarget "FormTests" */;
+			buildPhases = (
+				36AB4D191E7AE44700B8B990 /* Sources */,
+				36AB4D1A1E7AE44700B8B990 /* Frameworks */,
+				36AB4D1B1E7AE44700B8B990 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36AB4D1F1E7AE44700B8B990 /* PBXTargetDependency */,
+			);
+			name = FormTests;
+			productName = FormTests;
+			productReference = 36AB4D1D1E7AE44700B8B990 /* FormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36AB4D011E7AE44600B8B990 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Kentarou;
+				TargetAttributes = {
+					36AB4D081E7AE44600B8B990 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HY9CXX38QG;
+						ProvisioningStyle = Automatic;
+					};
+					36AB4D1C1E7AE44700B8B990 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HY9CXX38QG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 36AB4D081E7AE44600B8B990;
+					};
+				};
+			};
+			buildConfigurationList = 36AB4D041E7AE44600B8B990 /* Build configuration list for PBXProject "Form" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36AB4D001E7AE44600B8B990;
+			productRefGroup = 36AB4D0A1E7AE44700B8B990 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36AB4D081E7AE44600B8B990 /* Form */,
+				36AB4D1C1E7AE44700B8B990 /* FormTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36AB4D071E7AE44600B8B990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36AB4D171E7AE44700B8B990 /* LaunchScreen.storyboard in Resources */,
+				365FBF331E7D24C2002BBFF1 /* TextViewCell.xib in Resources */,
+				36AB4D141E7AE44700B8B990 /* Assets.xcassets in Resources */,
+				36AB4D121E7AE44700B8B990 /* Main.storyboard in Resources */,
+				36F50B901E7CB9FE00E7F26E /* TwoColumnPickerTextFieldCell.xib in Resources */,
+				365FBF3A1E7D3790002BBFF1 /* BlankCell.xib in Resources */,
+				36F50B8C1E7CB9D700E7F26E /* PickerTextFieldCell.xib in Resources */,
+				36F50B701E7CAA4F00E7F26E /* TextFieldCell.xib in Resources */,
+				36F50B881E7CB9BD00E7F26E /* DataPickerTextFieldCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36AB4D1B1E7AE44700B8B990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36AB4D051E7AE44600B8B990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36F50B781E7CADEC00E7F26E /* FormViewModel.swift in Sources */,
+				365FBF3C1E7D37ED002BBFF1 /* TextViewCellViewModel.swift in Sources */,
+				365FBF2C1E7D21E6002BBFF1 /* TextViewCellData.swift in Sources */,
+				36F50B981E7CBE6E00E7F26E /* DatePickerTextFieldCellData.swift in Sources */,
+				36F50B8B1E7CB9D700E7F26E /* PickerTextFieldCell.swift in Sources */,
+				36F50B841E7CB98500E7F26E /* TwoColumnPickerTextFieldCellViewModel.swift in Sources */,
+				36F50B7C1E7CB39F00E7F26E /* PickerDataArrayType.swift in Sources */,
+				36F50B821E7CB95100E7F26E /* DatePickerTextFieldCellViewModel.swift in Sources */,
+				36F50B961E7CBE3F00E7F26E /* PickerTextFieldCellData.swift in Sources */,
+				36F50B761E7CAB2600E7F26E /* FormViewController.swift in Sources */,
+				36F50B9D1E7CF75C00E7F26E /* CellViewModelType.swift in Sources */,
+				36F50B5F1E7CA04400E7F26E /* FormValidation.swift in Sources */,
+				36F50B9F1E7CF7FC00E7F26E /* UIView+.swift in Sources */,
+				36F50B6B1E7CA8AC00E7F26E /* DatePickerTextField.swift in Sources */,
+				36AB4D0D1E7AE44700B8B990 /* AppDelegate.swift in Sources */,
+				36F50B921E7CBA5E00E7F26E /* TextFieldCellData.swift in Sources */,
+				36F50B621E7CA07900E7F26E /* ValidationResult.swift in Sources */,
+				36F50B6F1E7CAA4F00E7F26E /* TextFieldCell.swift in Sources */,
+				36F50B651E7CA4F900E7F26E /* CustomTextField.swift in Sources */,
+				365FBF391E7D3790002BBFF1 /* BlankCell.swift in Sources */,
+				365FBF351E7D2F64002BBFF1 /* CellViewModel.swift in Sources */,
+				36F50B7A1E7CB04900E7F26E /* CellValidation.swift in Sources */,
+				365FBF2A1E7D1A1C002BBFF1 /* CustomTextView.swift in Sources */,
+				36F50B801E7CB93200E7F26E /* PickerTextFieldCellViewModel.swift in Sources */,
+				36F50B941E7CBA8D00E7F26E /* CellDatatype.swift in Sources */,
+				365FBF3E1E7D3813002BBFF1 /* BlankCellViewModel.swift in Sources */,
+				365FBF281E7D1628002BBFF1 /* FormData.swift in Sources */,
+				36F50B9A1E7CBE8F00E7F26E /* TwoColumnPickerTextFieldCellData.swift in Sources */,
+				36F50B871E7CB9BD00E7F26E /* DataPickerTextFieldCell.swift in Sources */,
+				36F50B7E1E7CB77000E7F26E /* TextFieldCellViewModel.swift in Sources */,
+				365FBF401E7D3B70002BBFF1 /* BlankCellData.swift in Sources */,
+				36F50B671E7CA60000E7F26E /* PickerTextField.swift in Sources */,
+				365FBF321E7D24C2002BBFF1 /* TextViewCell.swift in Sources */,
+				36F50B691E7CA84A00E7F26E /* TwoCulumnPickerTextField.swift in Sources */,
+				36F50B8F1E7CB9FE00E7F26E /* TwoColumnPickerTextFieldCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36AB4D191E7AE44700B8B990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36AB4D221E7AE44700B8B990 /* FormTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36AB4D1F1E7AE44700B8B990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36AB4D081E7AE44600B8B990 /* Form */;
+			targetProxy = 36AB4D1E1E7AE44700B8B990 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		36AB4D101E7AE44700B8B990 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36AB4D111E7AE44700B8B990 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		36AB4D151E7AE44700B8B990 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36AB4D161E7AE44700B8B990 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36AB4D241E7AE44700B8B990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		36AB4D251E7AE44700B8B990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36AB4D271E7AE44700B8B990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HY9CXX38QG;
+				INFOPLIST_FILE = Form/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.kentarou.Form;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		36AB4D281E7AE44700B8B990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HY9CXX38QG;
+				INFOPLIST_FILE = Form/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.kentarou.Form;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		36AB4D2A1E7AE44700B8B990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HY9CXX38QG;
+				INFOPLIST_FILE = FormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.kentarou.FormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Form.app/Form";
+			};
+			name = Debug;
+		};
+		36AB4D2B1E7AE44700B8B990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HY9CXX38QG;
+				INFOPLIST_FILE = FormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.kentarou.FormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Form.app/Form";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36AB4D041E7AE44600B8B990 /* Build configuration list for PBXProject "Form" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36AB4D241E7AE44700B8B990 /* Debug */,
+				36AB4D251E7AE44700B8B990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36AB4D261E7AE44700B8B990 /* Build configuration list for PBXNativeTarget "Form" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36AB4D271E7AE44700B8B990 /* Debug */,
+				36AB4D281E7AE44700B8B990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36AB4D291E7AE44700B8B990 /* Build configuration list for PBXNativeTarget "FormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36AB4D2A1E7AE44700B8B990 /* Debug */,
+				36AB4D2B1E7AE44700B8B990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36AB4D011E7AE44600B8B990 /* Project object */;
+}
